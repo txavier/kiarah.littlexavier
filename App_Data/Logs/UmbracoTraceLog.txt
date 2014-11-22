@@ -2431,3 +2431,115 @@ System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments spe
    at ASP.umbraco_dashboard_usercontrolproxy_aspx.ProcessRequest(HttpContext context)
    at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
    at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-11-21 21:38:25,710 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2014-11-21 21:38:25,719 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 5ms)
+2014-11-21 21:38:25,724 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2014-11-21 21:38:25,798 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 35 (took 73ms)
+2014-11-21 21:38:25,888 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2014-11-21 21:38:25,889 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+2014-11-21 21:38:25,889 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2014-11-21 21:38:25,890 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 16 (took 0ms)
+2014-11-21 21:38:25,911 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2014-11-21 21:38:25,913 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 5 (took 1ms)
+2014-11-21 21:38:25,913 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2014-11-21 21:38:25,916 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 30 (took 2ms)
+2014-11-21 21:38:25,986 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2014-11-21 21:38:25,986 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
+2014-11-21 21:38:25,986 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2014-11-21 21:38:25,987 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
+2014-11-21 21:38:26,447 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-11-21 21:38:26,447 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2014-11-21 21:38:26,455 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.ITree
+2014-11-21 21:38:26,456 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 19 (took 0ms)
+2014-11-21 21:38:26,483 [6] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Initializing Examine and binding to business logic events
+2014-11-21 21:38:26,731 [6] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Adding examine event handlers for index providers: 3
+2014-11-21 21:38:26,734 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplication
+2014-11-21 21:38:26,734 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 0ms)
+2014-11-21 21:42:37,209 [6] INFO  Umbraco.Core.PluginManager - [Thread 12] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2014-11-21 21:42:37,209 [6] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 22 (took 0ms)
+2014-11-21 21:42:37,378 [6] INFO  Umbraco.Core.PluginManager - [Thread 12] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2014-11-21 21:42:37,379 [6] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 43 (took 0ms)
+2014-11-21 21:42:47,691 [6] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 11] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
+SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
+SQL Statement:
+SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
+
+Exception:
+System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
+   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
+   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+2014-11-21 21:42:47,693 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 11] An unhandled exception occurred
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> umbraco.DataLayer.SqlHelperException: Umbraco Exception (DataLayer): SQL helper exception in ExecuteReader ---> SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
+SQL Statement:
+SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
+
+Exception:
+System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
+   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
+   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+   --- End of inner exception stack trace ---
+   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
+   at SmartBlogLibraries.smartBlogManagement.GetAllDocuments(SearchTerm searchTerm)
+   at SmartBlogLibraries.smartBlogManagement.showResults(EventArgs e)
+   at SmartBlogLibraries.smartBlogManagement.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.umbraco_dashboard_usercontrolproxy_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-11-21 21:42:52,119 [6] INFO  umbraco.content - [Thread 16] Loading content from disk cache...
+2014-11-21 21:43:46,346 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'Home' with Id '1068' has been unpublished.
+2014-11-21 21:43:46,471 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Starting resolution types of umbraco.interfaces.ICacheRefresher
+2014-11-21 21:43:46,472 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 20 (took 1ms)
+2014-11-21 21:43:46,740 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'Installing Modules' with Id '1071' has been unpublished.
+2014-11-21 21:43:46,789 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'Getting Started' with Id '1069' has been unpublished.
+2014-11-21 21:43:46,833 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'Go Further' with Id '1070' has been unpublished.
+2014-11-21 21:43:46,885 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'About' with Id '1072' has been unpublished.
+2014-11-21 21:43:46,929 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'News' with Id '1073' has been unpublished.
+2014-11-21 21:43:46,972 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'The 10 remarkable features of object' with Id '1074' has been unpublished.
+2014-11-21 21:43:47,013 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'This is a wonderful news item' with Id '1075' has been unpublished.
+2014-11-21 21:43:47,072 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'You really need to read this!' with Id '1076' has been unpublished.
+2014-11-21 21:43:47,112 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'Txt Starter Kit For Umbraco Released' with Id '1077' has been unpublished.
+2014-11-21 21:43:58,049 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'SmartBlog' with Id '1209' has been published.
+2014-11-21 21:43:58,049 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'RSS' with Id '1223' has been published.
+2014-11-21 21:43:58,050 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Posts' with Id '1210' has been published.
+2014-11-21 21:43:58,050 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content '2014' with Id '1216' has been published.
+2014-11-21 21:43:58,050 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content '2013' with Id '1211' has been published.
+2014-11-21 21:43:58,050 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'July' with Id '1221' has been published.
+2014-11-21 21:43:58,050 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'March' with Id '1217' has been published.
+2014-11-21 21:43:58,050 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'December' with Id '1212' has been published.
+2014-11-21 21:43:58,050 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'SmartBlog 2 was born' with Id '1218' has been published.
+2014-11-21 21:43:58,050 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Test' with Id '1222' has been published.
+2014-11-21 21:43:58,050 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Test Post' with Id '1215' has been published.
+2014-11-21 21:43:58,050 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Test' with Id '1213' has been published.
+2014-11-21 21:43:58,050 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Luke Alderton' with Id '1220' has been published.
+2014-11-21 21:43:58,050 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Luke' with Id '1219' has been published.
+2014-11-21 21:43:58,050 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'Test' with Id '1214' has been published.
+2014-11-21 21:44:19,887 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'SmartBlog' with Id '1209' has been published.
+2014-11-21 21:44:20,024 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Starting resolution types of umbraco.interfaces.IDataType
+2014-11-21 21:44:20,058 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.IDataType, found 35 (took 34ms)
+2014-11-21 21:44:20,065 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Starting resolution types of umbraco.interfaces.ITree
+2014-11-21 21:44:20,066 [6] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of umbraco.interfaces.ITree, found 35 (took 1ms)
+2014-11-21 21:45:26,926 [6] INFO  Umbraco.Core.PluginManager - [Thread 10] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2014-11-21 21:45:26,926 [6] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 43 (took 0ms)
