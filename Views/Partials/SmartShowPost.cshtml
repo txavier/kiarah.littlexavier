@@ -1,0 +1,28 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using System.Web.Mvc.Html;
+@using Umbraco.Web;
+@using umbraco.MacroEngines;
+@{
+    DynamicNode nextPage = SmartBlogLibraries.Helpers.Listing.GetNextNode(new DynamicNode(Model.Content.Id));
+    DynamicNode previousPage = SmartBlogLibraries.Helpers.Listing.GetPreviousNode(new DynamicNode(Model.Content.Id));
+    System.Xml.XmlDocument document = new System.Xml.XmlDocument();
+    
+    document.Load(AppDomain.CurrentDomain.BaseDirectory + "/config/SmartBlog.config");
+
+    string author = !string.IsNullOrEmpty(Model.Content.GetProperty("smartBlogAuthor").Value.ToString()) ?
+        Model.Content.GetProperty("smartBlogAuthor").Value.ToString() : document.GetElementsByTagName("defaultAuthor")[0].InnerText;
+    
+    if(nextPage != null)
+    {
+        <a href="@Umbraco.NiceUrl(nextPage.Id)">Next Post</a>
+    }
+    if(previousPage != null)
+    {
+        <a href="@Umbraco.NiceUrl(previousPage.Id)">Previous Post</a>
+    }
+    
+    <div id="postPageBody">
+        @Html.Raw(Model.Content.GetProperty("smartBlogBody").Value.ToString())<br />
+        By <a href="@Umbraco.NiceUrl(Model.Content.AncestorOrSelf("SmartBlogBlog").Id)?author=@author">@author</a> at @Convert.ToDateTime(Model.Content.GetProperty("smartBlogDate").Value.ToString()).ToString(SmartBlogLibraries.Helpers.DateTime.DateFormatNormalWithTime)
+    </div>
+}

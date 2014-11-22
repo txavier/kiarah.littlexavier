@@ -1,0 +1,33 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using System.Web.Mvc.Html;
+@using Umbraco.Web;
+@{
+    // Get this blogs root, does not use an id because there may be more thanone blog
+    dynamic blogRoot = CurrentPage.AncestorOrSelf("SmartBlogBlog");
+    // Get the posts in this blog
+    dynamic posts = blogRoot.Descendants("SmartBlogPost");
+    //List of authors
+    List<string> authors = new List<string>();
+    System.Xml.XmlDocument document = new System.Xml.XmlDocument();
+
+    document.Load(AppDomain.CurrentDomain.BaseDirectory + "/config/SmartBlog.config");
+    
+    // Loop through the posts to retrieve the authors and generate a list without duplicating them.
+    foreach(dynamic post in posts)
+    {
+        string author = post.author.Length > 0 ? post.author.ToString() : document.GetElementsByTagName("defaultAuthor")[0].InnerText;
+        
+        if(!authors.Contains(author))
+        {
+            authors.Add(author);
+        }
+    }
+    
+    <span class="smartSubTitle smartTopBorder">Authors</span><br />
+    
+    // Loop through the generated authors list and add them tothe page
+    foreach(string author in authors)
+    {
+        <a href="@Umbraco.NiceUrl(blogRoot.Id)?author=@author">@author</a><br />
+    }
+}

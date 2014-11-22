@@ -1,0 +1,81 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<SmartBlogLibraries.Models.SmartBlogCommentFormModel>
+@using System.Web.Mvc.Html;
+@using Umbraco.Web;
+@{
+    Layout = null;
+
+    // Client validation enabled
+    HtmlHelper.ClientValidationEnabled = true;
+    HtmlHelper.UnobtrusiveJavaScriptEnabled = true;
+
+    // Set up form
+    Model.Comment = "Your Comment";
+
+    // Load settings from config file
+    System.Xml.XmlDocument document = new System.Xml.XmlDocument();
+    document.Load(AppDomain.CurrentDomain.BaseDirectory + "/config/SmartBlog.config");
+
+    // Master blog settings
+    bool masterDisableComments = bool.Parse(document.GetElementsByTagName("masterDisableComments")[0].InnerText);
+
+    // Master blog settings
+    bool autoApproveComments = !string.IsNullOrEmpty(document.GetElementsByTagName("autoApproveComments")[0].InnerText) ? bool.Parse(document.GetElementsByTagName("autoApproveComments")[0].InnerText) : false;
+
+    bool disableFacebookIntegration = bool.Parse(document.GetElementsByTagName("disableFacebookIntegration")[0].InnerText);
+    
+    // Get the current page
+    dynamic CurrentPage = Umbraco.Content(UmbracoContext.Current.PageId);
+
+    // If comments have not been disabled then don't show them
+    if (!masterDisableComments && CurrentPage.disableComments.ToString() != "True" && CurrentPage.AncestorOrSelf("SmartBlogBlog").disableGlobalComments.ToString() != "True")
+    {
+        <h3>Comments</h3>
+        
+        // Div for comments to be loaded into
+        <div id="commentsContainer">
+            &nbsp;
+        </div>
+    
+        <br /><h3>Post a comment</h3>
+
+        // Render comment form
+        using (Html.BeginUmbracoForm("SubmitSmartBlogComment", "CommentFormSurface", null, new { id = "commentForm" }))
+        {
+            @Html.ValidationSummary(false, "Please correct the following:");
+    
+            <table class="commentFormTable">
+                <tr>
+                    <td colspan="2">
+                        @Html.TextBoxFor(x => Model.Name, new { @id = "commentName", @Value = "Name", onfocus = "if (this.value == 'Name') {this.value = '';}", onblur = "if (this.value == '') {this.value = 'Name';}" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.TextBoxFor(x => Model.Email, new { @id = "commentEmail", @Value = "Email", onfocus = "if (this.value == 'Email') {this.value = '';}", onblur = "if (this.value == '') {this.value = 'Email';}" })
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(x => Model.Website, new { @id = "commentWebsite", @Value = "Website", onfocus = "if (this.value == 'Website') {this.value = '';}", onblur = "if (this.value == '') {this.value = 'Website';}" })
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        @Html.TextAreaFor(x => Model.Comment, new { @id = "commentComment", @Value = "Your Comment", onfocus = "if (this.value == 'Your Comment') {this.value = '';}", onblur = "if (this.value == '') {this.value = 'Your Comment';}" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.TextBoxFor(x => Model.SecurityQuestion, new { @id = "commentSecurity", @Value = "Security Question: What is 2 + 2", onfocus = "if (this.value == 'Security Question: What is 2 + 2') {this.value = '';}", onblur = "if (this.value == '') {this.value = 'Security Question: What is 2 + 2';}" })
+                    </td>
+                    <td class="buttonsArea">
+                        @if (!disableFacebookIntegration) {
+                            <input type="button" name="Facebook" value="Autofill with Facebook" id="facebookButton" />
+                        }
+                        <input type="submit" name="Submit" value="Submit" id="submitButton" />
+                    </td>
+                </tr>
+            </table>
+        }
+
+        <div id="fb-root"></div>
+    }
+}

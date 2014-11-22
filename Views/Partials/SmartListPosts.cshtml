@@ -1,0 +1,111 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using System.Web.Mvc.Html;
+@using Umbraco.Web;
+@using umbraco.NodeFactory;
+@using Umbraco.Core.Models;
+@using Umbraco.Core.Dynamics;
+@{
+    IPublishedContent blogRoot = Model.Content.AncestorOrSelf("SmartBlogBlog");
+    
+    IEnumerable<IPublishedContent> results = new List<IPublishedContent>();
+    System.Xml.XmlDocument document = new System.Xml.XmlDocument();
+
+    document.Load(AppDomain.CurrentDomain.BaseDirectory + "/config/SmartBlog.config");
+
+    bool useSummaryOnList = bool.Parse(document.GetElementsByTagName("useSummaryOnList")[0].InnerText);
+
+    // Get posts by search query if specified, else just get all the posts.
+    if(!string.IsNullOrEmpty(Request.QueryString["q"]))
+    {
+        Examine.SearchCriteria.ISearchCriteria filter = null;
+        string searchTerm = "";
+        results = SmartBlogLibraries.Helpers.Search.SearchBlog(out filter, out searchTerm)
+            .Select(x => ((IPublishedContent)Umbraco.Content(x.Id)));
+    }
+    else
+    {
+        results = ((IPublishedContent)CurrentPage).DescendantsOrSelf("SmartBlogPost");
+    }
+    
+    // Refine posts by tag
+    if (!string.IsNullOrEmpty(Request.QueryString["tag"]))
+    {
+        results = from result in results
+                  where result.HasValue("smartBlogTags")
+                    && result.GetProperty("smartBlogTags").Value.ToString().Split(',').Select(x => x.ToLower())
+                        .Contains(Request.QueryString["tag"].ToLower())
+                  select result;
+    }
+
+    // Refine posts by author
+    if (!string.IsNullOrEmpty(Request.QueryString["author"]))
+    {
+        results = from result in results
+                  where result.GetProperty("smartBlogAuthor").Value.ToString().Split(',').Select(x => x.ToLower()).Contains(Request.QueryString["author"].ToLower()) || 
+                            (Request.QueryString["author"].ToLower() == document.GetElementsByTagName("defaultAuthor")[0].InnerText.ToLower() && result.GetProperty("smartBlogAuthor").Value.ToString().Length == 0)
+                  select result;
+    }
+
+    // Refine posts by category
+    if (!string.IsNullOrEmpty(Request.QueryString["category"]))
+    {
+        results = from result in results
+                  where result.GetProperty("smartBlogCategory").Value.ToString().Split(',').Select(x => x.ToLower())
+                            .Contains(Request.QueryString["category"].ToLower())
+                  select result;
+    }
+
+    // Make sure all results are smart blog posts and order by date
+    results = results.Where(y => y.DocumentTypeAlias == "SmartBlogPost").OrderByDescending(x => x.GetPropertyValue("smartBlogDate"));
+
+    // If there aren't any results, we notify the client.
+    if(results.Count() > 0)
+    {
+        // Calculate paging
+        ushort page = 1;
+        if (!ushort.TryParse(Request.QueryString["p"], out page))
+        {
+            page = 1;
+        }
+        ushort itemsPerPage = 5;
+        int skip = (page - 1) * itemsPerPage;
+        int resultCount = results.Count();
+
+        // Render paging
+        @Html.Raw(SmartBlogLibraries.Helpers.Listing.RenderPagination(page, resultCount, itemsPerPage))
+
+        // Render posts
+        <div class="postList">
+            @foreach (IPublishedContent post in results.Skip(skip).Take(itemsPerPage))
+            {
+                string author = post.GetProperty("smartBlogAuthor") != null && post.GetProperty("smartBlogAuthor").Value.ToString() != "" ?
+                    post.GetProperty("smartBlogAuthor").Value.ToString() : 
+                    document.GetElementsByTagName("defaultAuthor")[0].InnerText;
+            
+                try
+                {
+                    <div class="post">
+                        <h3><a href="@Umbraco.NiceUrl(post.Id)">@post.Name</a></h3>
+                        @if(useSummaryOnList)
+                        {
+                            <p>@Html.Raw(post.GetProperty("smartBlogSummary").Value.ToString())</p>
+                        }
+                        else
+                        {
+                            @Html.Raw(post.GetProperty("smartBlogBody").Value.ToString())
+                        }
+                        By <a href="?author=@author">@author</a> at @Convert.ToDateTime(post.GetProperty("smartBlogDate").Value.ToString()).ToString(SmartBlogLibraries.Helpers.DateTime.DateFormatNormal)
+                    </div>
+                }
+                catch(Exception) {}
+            }
+        </div>
+    
+        // Render paging
+        @Html.Raw(SmartBlogLibraries.Helpers.Listing.RenderPagination(page, resultCount, itemsPerPage))
+    }
+    else
+    {
+        <text>Unfortunately, no results were found for '@Request.QueryString["q"]' in @Model.Content.Name, try searching a higher level.</text>
+    }
+}

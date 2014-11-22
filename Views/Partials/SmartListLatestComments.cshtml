@@ -1,0 +1,18 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using System.Web.Mvc.Html;
+@using Umbraco.Web;
+@{
+    // Get this blogs root, does not use an id because there may be more thanone blog
+    IPublishedContent blogRoot = Model.Content.AncestorOrSelf("SmartBlogBlog");
+    // Get the comments in this blog
+    IEnumerable<IPublishedContent> comments = blogRoot.Descendants("SmartBlogComment").OrderBy("updateDate").Take(5);
+    
+    <span class="smartSubTitle smartTopBorder">Latest Comments</span><br />
+    
+    foreach (IPublishedContent comment in comments)
+    {
+        <a href="@Umbraco.NiceUrl(comment.Parent.Id)">By @comment.GetProperty("smartBlogName").Value.ToString()
+         at @Convert.ToDateTime(comment.UpdateDate.ToString()).ToString(SmartBlogLibraries.Helpers.DateTime.DateFormatNormalWithTime)</a>
+        <br /><br />
+    }
+}

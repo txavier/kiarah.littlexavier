@@ -1,0 +1,11 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using System.Web.Mvc.Html;
+@using Umbraco.Web;
+@{
+    string val = !string.IsNullOrEmpty(Request.QueryString["q"]) ? Request.QueryString["q"].ToString() : "Search";
+    
+    <form id="smartBlogSearchForm">
+        <input type="text" id="smartSearchInput" value="@val" />
+        <input type="button" id="smartSearchButton" value="Go" />
+    </form>
+}
