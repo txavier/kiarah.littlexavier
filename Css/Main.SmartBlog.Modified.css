@@ -399,8 +399,9 @@ ul.breadcrumb {
     height: 360px;
     margin: 0 auto;
 }
+/* -------------------------------------------------------------- */
 
-
+/* Custom Styling */
 .container {
     margin-top: 50px;
     box-shadow: 0 0 15px #444;
@@ -428,4 +429,5 @@ body {
     text-transform: none;
     font-size: 100px;
 }
+/* -------------------------------------------------------------- */
 
