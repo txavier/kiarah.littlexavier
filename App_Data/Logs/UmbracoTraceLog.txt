@@ -1,5 +1,37 @@
-﻿2014-11-22 00:03:25,273 [6] INFO  umbraco.content - [Thread 15] Loading content from database...
-2014-11-22 00:06:45,311 [6] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 19] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
+﻿2014-11-23 00:00:48,267 [6] INFO  umbraco.BusinessLogic.Log - [Thread 59] Log scrubbed.  Removed all items older than 2014-09-24 00:00:48
+2014-11-23 00:00:48,268 [6] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 59] Application shutdown. Reason: MaxRecompilationsReached
+2014-11-23 00:00:51,741 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Determining hash of code files on disk
+2014-11-23 00:00:51,748 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Hash determined (took 4ms)
+2014-11-23 00:00:51,753 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2014-11-23 00:00:51,840 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 35 (took 86ms)
+2014-11-23 00:00:51,932 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2014-11-23 00:00:51,933 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+2014-11-23 00:00:51,933 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2014-11-23 00:00:51,934 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 16 (took 0ms)
+2014-11-23 00:00:51,948 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2014-11-23 00:00:51,949 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 5 (took 0ms)
+2014-11-23 00:00:51,949 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2014-11-23 00:00:51,952 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 30 (took 2ms)
+2014-11-23 00:00:52,030 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2014-11-23 00:00:52,031 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
+2014-11-23 00:00:52,031 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2014-11-23 00:00:52,031 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
+2014-11-23 00:00:52,487 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-11-23 00:00:52,488 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2014-11-23 00:00:52,498 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Starting resolution types of umbraco.interfaces.ITree
+2014-11-23 00:00:52,498 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Completed resolution of types of umbraco.interfaces.ITree, found 19 (took 0ms)
+2014-11-23 00:00:52,535 [9] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 53] Initializing Examine and binding to business logic events
+2014-11-23 00:00:52,709 [9] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 53] Adding examine event handlers for index providers: 3
+2014-11-23 00:00:52,712 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Starting resolution types of umbraco.interfaces.IApplication
+2014-11-23 00:00:52,713 [9] INFO  Umbraco.Core.PluginManager - [Thread 53] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 0ms)
+2014-11-23 00:00:53,482 [9] INFO  umbraco.content - [Thread 62] Loading content from disk cache...
+2014-11-23 00:00:53,555 [9] INFO  Umbraco.Core.PluginManager - [Thread 62] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2014-11-23 00:00:53,555 [9] INFO  Umbraco.Core.PluginManager - [Thread 62] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 22 (took 0ms)
+2014-11-23 00:00:53,774 [9] INFO  Umbraco.Core.PluginManager - [Thread 62] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2014-11-23 00:00:53,775 [9] INFO  Umbraco.Core.PluginManager - [Thread 62] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 43 (took 0ms)
+2014-11-23 00:15:00,397 [9] INFO  Umbraco.Core.PluginManager - [Thread 54] Starting resolution types of umbraco.interfaces.ITree
+2014-11-23 00:15:00,399 [9] INFO  Umbraco.Core.PluginManager - [Thread 54] Completed resolution of types of umbraco.interfaces.ITree, found 35 (took 1ms)
+2014-11-23 00:15:49,227 [9] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 47] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
 SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
 SQL Statement:
 SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
@@ -14,7 +46,7 @@ System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments spe
    at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
    at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
    at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-2014-11-22 00:06:45,311 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 19] An unhandled exception occurred
+2014-11-23 00:15:49,230 [9] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 47] An unhandled exception occurred
 System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> umbraco.DataLayer.SqlHelperException: Umbraco Exception (DataLayer): SQL helper exception in ExecuteReader ---> SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
 SQL Statement:
 SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
@@ -48,7 +80,7 @@ System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments spe
    at ASP.umbraco_dashboard_usercontrolproxy_aspx.ProcessRequest(HttpContext context)
    at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
    at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-2014-11-22 00:07:19,091 [6] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 46] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
+2014-11-23 00:22:27,690 [9] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 41] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
 SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
 SQL Statement:
 SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
@@ -63,7 +95,7 @@ System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments spe
    at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
    at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
    at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-2014-11-22 00:07:19,091 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 46] An unhandled exception occurred
+2014-11-23 00:22:27,690 [9] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 41] An unhandled exception occurred
 System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> umbraco.DataLayer.SqlHelperException: Umbraco Exception (DataLayer): SQL helper exception in ExecuteReader ---> SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
 SQL Statement:
 SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
@@ -97,10 +129,72 @@ System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments spe
    at ASP.umbraco_dashboard_usercontrolproxy_aspx.ProcessRequest(HttpContext context)
    at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
    at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-2014-11-22 21:30:19,925 [6] INFO  Umbraco.Web.Security.WebSecurity - [Thread 56] User Id: 0 logged in
-2014-11-22 21:30:19,939 [6] INFO  Umbraco.Core.PluginManager - [Thread 58] Starting resolution types of Umbraco.Web.Trees.TreeController
-2014-11-22 21:30:19,939 [6] INFO  Umbraco.Core.PluginManager - [Thread 58] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
-2014-11-22 21:30:20,172 [6] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 42] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
+2014-11-23 20:13:38,519 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2014-11-23 20:13:38,538 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 14ms)
+2014-11-23 20:13:38,546 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2014-11-23 20:13:38,735 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 35 (took 188ms)
+2014-11-23 20:13:38,888 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2014-11-23 20:13:38,889 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1ms)
+2014-11-23 20:13:38,890 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2014-11-23 20:13:38,891 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 16 (took 1ms)
+2014-11-23 20:13:38,916 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2014-11-23 20:13:38,917 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 5 (took 1ms)
+2014-11-23 20:13:38,917 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2014-11-23 20:13:38,919 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 30 (took 1ms)
+2014-11-23 20:13:39,075 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2014-11-23 20:13:39,075 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
+2014-11-23 20:13:39,075 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2014-11-23 20:13:39,076 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
+2014-11-23 20:13:39,729 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-11-23 20:13:39,729 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2014-11-23 20:13:39,742 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.ITree
+2014-11-23 20:13:39,743 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 19 (took 0ms)
+2014-11-23 20:13:39,792 [6] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Initializing Examine and binding to business logic events
+2014-11-23 20:13:40,166 [6] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Adding examine event handlers for index providers: 3
+2014-11-23 20:13:40,169 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplication
+2014-11-23 20:13:40,170 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 0ms)
+2014-11-23 20:13:41,571 [6] INFO  umbraco.content - [Thread 10] Loading content from disk cache...
+2014-11-23 20:13:41,648 [6] INFO  Umbraco.Core.PluginManager - [Thread 10] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2014-11-23 20:13:41,649 [6] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 22 (took 0ms)
+2014-11-23 20:13:41,931 [6] INFO  Umbraco.Core.PluginManager - [Thread 10] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2014-11-23 20:13:41,932 [6] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 43 (took 1ms)
+2014-11-23 20:13:42,830 [6] INFO  umbraco.BusinessLogic.Log - [Thread 9] Log scrubbed.  Removed all items older than 2014-09-24 20:13:42
+2014-11-23 20:13:42,831 [6] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 9] Application shutdown. Reason: BinDirChangeOrDirectoryRename
+2014-11-23 20:13:46,886 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2014-11-23 20:13:46,895 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 5ms)
+2014-11-23 20:13:46,905 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2014-11-23 20:13:47,094 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 35 (took 188ms)
+2014-11-23 20:13:47,140 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2014-11-23 20:13:47,145 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 5ms)
+2014-11-23 20:13:47,146 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2014-11-23 20:13:47,152 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 16 (took 6ms)
+2014-11-23 20:13:47,164 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2014-11-23 20:13:47,175 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 5 (took 11ms)
+2014-11-23 20:13:47,175 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2014-11-23 20:13:47,181 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 30 (took 5ms)
+2014-11-23 20:13:47,209 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2014-11-23 20:13:47,215 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 5ms)
+2014-11-23 20:13:47,215 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2014-11-23 20:13:47,221 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 6ms)
+2014-11-23 20:13:47,611 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplication
+2014-11-23 20:13:47,622 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 11ms)
+2014-11-23 20:13:47,649 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-11-23 20:13:47,654 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 5ms)
+2014-11-23 20:13:47,660 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.ITree
+2014-11-23 20:13:47,668 [14] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 19 (took 7ms)
+2014-11-23 20:13:47,676 [14] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Initializing Examine and binding to business logic events
+2014-11-23 20:13:47,808 [14] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Adding examine event handlers for index providers: 3
+2014-11-23 20:13:49,803 [14] INFO  umbraco.content - [Thread 12] Loading content from disk cache...
+2014-11-23 20:13:49,875 [14] INFO  Umbraco.Core.PluginManager - [Thread 12] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2014-11-23 20:13:49,883 [14] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 22 (took 7ms)
+2014-11-23 20:13:50,109 [14] INFO  Umbraco.Core.PluginManager - [Thread 12] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2014-11-23 20:13:50,126 [14] INFO  Umbraco.Core.PluginManager - [Thread 12] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 43 (took 16ms)
+2014-11-23 20:15:51,439 [14] INFO  Umbraco.Web.Security.WebSecurity - [Thread 11] User Id: 0 logged in
+2014-11-23 20:15:51,548 [14] INFO  Umbraco.Core.PluginManager - [Thread 17] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-11-23 20:15:51,548 [14] INFO  Umbraco.Core.PluginManager - [Thread 17] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2014-11-23 20:15:51,671 [14] INFO  Umbraco.Core.PluginManager - [Thread 11] Starting resolution types of umbraco.interfaces.ITree
+2014-11-23 20:15:51,685 [14] INFO  Umbraco.Core.PluginManager - [Thread 11] Completed resolution of types of umbraco.interfaces.ITree, found 35 (took 14ms)
+2014-11-23 20:15:52,844 [14] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 11] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
 SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
 SQL Statement:
 SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
@@ -115,7 +209,7 @@ System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments spe
    at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
    at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
    at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-2014-11-22 21:30:20,173 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 42] An unhandled exception occurred
+2014-11-23 20:15:52,847 [14] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 11] An unhandled exception occurred
 System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> umbraco.DataLayer.SqlHelperException: Umbraco Exception (DataLayer): SQL helper exception in ExecuteReader ---> SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
 SQL Statement:
 SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
@@ -149,7 +243,18 @@ System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments spe
    at ASP.umbraco_dashboard_usercontrolproxy_aspx.ProcessRequest(HttpContext context)
    at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
    at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-2014-11-22 21:37:13,922 [6] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 33] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
+2014-11-23 20:16:34,604 [14] INFO  Umbraco.Core.PluginManager - [Thread 17] Starting resolution types of umbraco.interfaces.ICacheRefresher
+2014-11-23 20:16:34,615 [14] INFO  Umbraco.Core.PluginManager - [Thread 17] Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 20 (took 11ms)
+2014-11-23 20:16:38,117 [14] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'November' with Id '1255' has been published.
+2014-11-23 20:18:15,599 [14] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 13] Content 'First!' with Id '0' has been published.
+2014-11-23 20:41:33,789 [14] WARN  Umbraco.Web.NotificationServiceExtensions - [Thread 39] There is no current Umbraco user logged in, the notifications will be sent from the administrator
+2014-11-23 20:41:33,810 [14] INFO  umbraco.cms.businesslogic.web.Document - [Thread 39] New document 1257
+2014-11-23 20:41:33,839 [14] INFO  Umbraco.Core.PluginManager - [Thread 39] Starting resolution types of umbraco.interfaces.IDataType
+2014-11-23 20:41:33,923 [14] INFO  Umbraco.Core.PluginManager - [Thread 39] Completed resolution of types of umbraco.interfaces.IDataType, found 35 (took 83ms)
+2014-11-23 20:41:33,959 [14] WARN  Umbraco.Web.NotificationServiceExtensions - [Thread 39] There is no current Umbraco user logged in, the notifications will be sent from the administrator
+2014-11-23 20:41:34,022 [14] WARN  Umbraco.Web.NotificationServiceExtensions - [Thread 39] There is no current Umbraco user logged in, the notifications will be sent from the administrator
+2014-11-23 20:43:17,475 [14] INFO  Umbraco.Web.Security.WebSecurity - [Thread 53] User Id: 0 logged in
+2014-11-23 20:43:17,886 [14] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 47] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
 SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
 SQL Statement:
 SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
@@ -164,737 +269,7 @@ System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments spe
    at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
    at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
    at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-2014-11-22 21:37:13,922 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 33] An unhandled exception occurred
-System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> umbraco.DataLayer.SqlHelperException: Umbraco Exception (DataLayer): SQL helper exception in ExecuteReader ---> SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
-SQL Statement:
-SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-
-Exception:
-System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
-   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
-   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-   --- End of inner exception stack trace ---
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-   at SmartBlogLibraries.smartBlogManagement.GetAllDocuments(SearchTerm searchTerm)
-   at SmartBlogLibraries.smartBlogManagement.showResults(EventArgs e)
-   at SmartBlogLibraries.smartBlogManagement.OnLoad(EventArgs e)
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.HandleError(Exception e)
-   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.ProcessRequest()
-   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
-   at System.Web.UI.Page.ProcessRequest(HttpContext context)
-   at ASP.umbraco_dashboard_usercontrolproxy_aspx.ProcessRequest(HttpContext context)
-   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-2014-11-22 21:38:28,891 [6] INFO  umbraco.BusinessLogic.Log - [Thread 30] Log scrubbed.  Removed all items older than 2014-09-23 21:38:28
-2014-11-22 21:39:41,949 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 58] Content 'KSmartBlog' with Id '1244' has been published.
-2014-11-22 21:39:49,506 [6] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 58] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
-SQL Statement:
-SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-
-Exception:
-System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
-   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
-   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-2014-11-22 21:39:49,507 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 58] An unhandled exception occurred
-System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> umbraco.DataLayer.SqlHelperException: Umbraco Exception (DataLayer): SQL helper exception in ExecuteReader ---> SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
-SQL Statement:
-SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-
-Exception:
-System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
-   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
-   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-   --- End of inner exception stack trace ---
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-   at SmartBlogLibraries.smartBlogManagement.GetAllDocuments(SearchTerm searchTerm)
-   at SmartBlogLibraries.smartBlogManagement.showResults(EventArgs e)
-   at SmartBlogLibraries.smartBlogManagement.OnLoad(EventArgs e)
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.HandleError(Exception e)
-   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.ProcessRequest()
-   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
-   at System.Web.UI.Page.ProcessRequest(HttpContext context)
-   at ASP.umbraco_dashboard_usercontrolproxy_aspx.ProcessRequest(HttpContext context)
-   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-2014-11-22 21:40:50,461 [6] INFO  umbraco.content - [Thread 58] Loading content from database...
-2014-11-22 21:41:17,652 [6] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 17] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
-SQL Statement:
-SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-
-Exception:
-System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
-   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
-   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-2014-11-22 21:41:17,652 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 17] An unhandled exception occurred
-System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> umbraco.DataLayer.SqlHelperException: Umbraco Exception (DataLayer): SQL helper exception in ExecuteReader ---> SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
-SQL Statement:
-SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-
-Exception:
-System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
-   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
-   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-   --- End of inner exception stack trace ---
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-   at SmartBlogLibraries.smartBlogManagement.GetAllDocuments(SearchTerm searchTerm)
-   at SmartBlogLibraries.smartBlogManagement.showResults(EventArgs e)
-   at SmartBlogLibraries.smartBlogManagement.OnLoad(EventArgs e)
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.HandleError(Exception e)
-   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.ProcessRequest()
-   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
-   at System.Web.UI.Page.ProcessRequest(HttpContext context)
-   at ASP.umbraco_dashboard_usercontrolproxy_aspx.ProcessRequest(HttpContext context)
-   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-2014-11-22 21:41:56,284 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 17] Content 'KPosts' with Id '0' has been published.
-2014-11-22 21:42:48,903 [6] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 58] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
-SQL Statement:
-SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-
-Exception:
-System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
-   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
-   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-2014-11-22 21:42:48,903 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 58] An unhandled exception occurred
-System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> umbraco.DataLayer.SqlHelperException: Umbraco Exception (DataLayer): SQL helper exception in ExecuteReader ---> SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
-SQL Statement:
-SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-
-Exception:
-System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
-   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
-   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-   --- End of inner exception stack trace ---
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-   at SmartBlogLibraries.smartBlogManagement.GetAllDocuments(SearchTerm searchTerm)
-   at SmartBlogLibraries.smartBlogManagement.showResults(EventArgs e)
-   at SmartBlogLibraries.smartBlogManagement.OnLoad(EventArgs e)
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.HandleError(Exception e)
-   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.ProcessRequest()
-   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
-   at System.Web.UI.Page.ProcessRequest(HttpContext context)
-   at ASP.umbraco_dashboard_usercontrolproxy_aspx.ProcessRequest(HttpContext context)
-   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-2014-11-22 21:43:04,877 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 58] Content 'KPosts' with Id '1248' has been unpublished.
-2014-11-22 21:48:51,945 [6] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 31] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
-SQL Statement:
-SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-
-Exception:
-System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
-   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
-   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-2014-11-22 21:48:51,945 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 31] An unhandled exception occurred
-System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> umbraco.DataLayer.SqlHelperException: Umbraco Exception (DataLayer): SQL helper exception in ExecuteReader ---> SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
-SQL Statement:
-SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-
-Exception:
-System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
-   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
-   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-   --- End of inner exception stack trace ---
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-   at SmartBlogLibraries.smartBlogManagement.GetAllDocuments(SearchTerm searchTerm)
-   at SmartBlogLibraries.smartBlogManagement.showResults(EventArgs e)
-   at SmartBlogLibraries.smartBlogManagement.OnLoad(EventArgs e)
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.HandleError(Exception e)
-   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.ProcessRequest()
-   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
-   at System.Web.UI.Page.ProcessRequest(HttpContext context)
-   at ASP.umbraco_dashboard_usercontrolproxy_aspx.ProcessRequest(HttpContext context)
-   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-2014-11-22 21:55:41,128 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'KRSS' with Id '1250' has been published.
-2014-11-22 21:55:41,128 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'KPosts' with Id '1249' has been published.
-2014-11-22 21:55:41,128 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content '2014' with Id '1251' has been published.
-2014-11-22 21:55:41,128 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'November' with Id '1252' has been published.
-2014-11-22 21:55:41,128 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'Kiarah's Blog was born' with Id '1253' has been published.
-2014-11-22 21:55:58,729 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 47] Content 'SmartBlog' with Id '1209' has been unpublished.
-2014-11-22 21:55:58,822 [6] WARN  Umbraco.Web.Routing.DefaultUrlProvider - [Thread 47] Couldn't find any page with nodeId=1209. This is most likely caused by the page not being published.
-2014-11-22 21:56:12,689 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 15] An unhandled exception occurred
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at Umbraco.Web.PublishedContentExtensions.<EnumerateDescendants>d__4f.MoveNext()
-   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
-   at ASP._Page_Views_Partials_SmartListTags_cshtml.Execute() in c:\Users\Theo\Documents\My Web Sites\Umbraco CMS1\Views\Partials\SmartListTags.cshtml:line 15
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
-   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
-   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
-   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)
-   at ASP._Page_Views_KSmartBlogContent_cshtml.Execute() in c:\Users\Theo\Documents\My Web Sites\Umbraco CMS1\Views\KSmartBlogContent.cshtml:line 13
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
-   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.WebPages.WebPageBase.<>c__DisplayClass7.<RenderPageCore>b__6(TextWriter writer)
-   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
-   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
-   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
-   at System.Web.WebPages.WebPageBase.PopContext()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.WebPages.WebPageBase.<>c__DisplayClass7.<RenderPageCore>b__6(TextWriter writer)
-   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
-   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
-   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
-   at System.Web.WebPages.WebPageBase.PopContext()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
-   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
-   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
-   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
-   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
-   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-2014-11-22 21:56:48,957 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 15] Content 'KPosts' with Id '1249' has been published.
-2014-11-22 21:57:29,917 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 47] Content 'November' with Id '1252' has been published.
-2014-11-22 21:57:33,460 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'Kiarah's Blog was born' with Id '1253' has been published.
-2014-11-22 21:57:36,389 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 47] An unhandled exception occurred
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at ASP._Page_Views_Partials_SmartShowPost_cshtml.Execute() in c:\Users\Theo\Documents\My Web Sites\Umbraco CMS1\Views\Partials\SmartShowPost.cshtml:line 25
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
-   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
-   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
-   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)
-   at ASP._Page_Views_KSmartBlogPost_cshtml.Execute() in c:\Users\Theo\Documents\My Web Sites\Umbraco CMS1\Views\KSmartBlogPost.cshtml:line 8
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
-   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
-   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
-   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
-   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
-   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
-   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-2014-11-22 21:58:18,174 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 31] Content 'Kiarah's Blog was born' with Id '1253' has been published.
-2014-11-22 21:58:23,986 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'KSmartBlog' with Id '1244' has been published.
-2014-11-22 21:58:26,787 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 27] An unhandled exception occurred
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at Umbraco.Web.PublishedContentExtensions.<EnumerateDescendants>d__4f.MoveNext()
-   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
-   at ASP._Page_Views_Partials_SmartListTags_cshtml.Execute() in c:\Users\Theo\Documents\My Web Sites\Umbraco CMS1\Views\Partials\SmartListTags.cshtml:line 15
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
-   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
-   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
-   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)
-   at ASP._Page_Views_KSmartBlogContent_cshtml.Execute() in c:\Users\Theo\Documents\My Web Sites\Umbraco CMS1\Views\KSmartBlogContent.cshtml:line 13
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
-   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.WebPages.WebPageBase.<>c__DisplayClass7.<RenderPageCore>b__6(TextWriter writer)
-   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
-   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
-   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
-   at System.Web.WebPages.WebPageBase.PopContext()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.WebPages.WebPageBase.<>c__DisplayClass7.<RenderPageCore>b__6(TextWriter writer)
-   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
-   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
-   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
-   at System.Web.WebPages.WebPageBase.PopContext()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
-   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
-   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
-   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
-   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
-   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-2014-11-22 21:59:58,077 [6] WARN  Umbraco.Web.Routing.DefaultUrlProvider - [Thread 27] Couldn't find any page with nodeId=1220. This is most likely caused by the page not being published.
-2014-11-22 22:00:10,277 [6] WARN  Umbraco.Web.Routing.DefaultUrlProvider - [Thread 9] Couldn't find any page with nodeId=1220. This is most likely caused by the page not being published.
-2014-11-22 22:00:23,228 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 28] Content 'Test comment.' with Id '1254' has been published.
-2014-11-22 22:00:28,650 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 27] Content 'KSmartBlog' with Id '1244' has been published.
-2014-11-22 22:00:30,657 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 9] An unhandled exception occurred
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at Umbraco.Web.PublishedContentExtensions.<EnumerateDescendants>d__4f.MoveNext()
-   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
-   at ASP._Page_Views_Partials_SmartListTags_cshtml.Execute() in c:\Users\Theo\Documents\My Web Sites\Umbraco CMS1\Views\Partials\SmartListTags.cshtml:line 15
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
-   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
-   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
-   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)
-   at ASP._Page_Views_KSmartBlogContent_cshtml.Execute() in c:\Users\Theo\Documents\My Web Sites\Umbraco CMS1\Views\KSmartBlogContent.cshtml:line 13
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
-   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.WebPages.WebPageBase.<>c__DisplayClass7.<RenderPageCore>b__6(TextWriter writer)
-   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
-   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
-   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
-   at System.Web.WebPages.WebPageBase.PopContext()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.WebPages.WebPageBase.<>c__DisplayClass7.<RenderPageCore>b__6(TextWriter writer)
-   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
-   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
-   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
-   at System.Web.WebPages.WebPageBase.PopContext()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
-   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
-   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
-   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
-   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
-   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-2014-11-22 22:01:00,975 [6] WARN  Umbraco.Web.Routing.DefaultUrlProvider - [Thread 28] Couldn't find any page with nodeId=1223. This is most likely caused by the page not being published.
-2014-11-22 22:09:36,419 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
-2014-11-22 22:09:36,431 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 8ms)
-2014-11-22 22:09:36,436 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
-2014-11-22 22:09:36,562 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 35 (took 125ms)
-2014-11-22 22:09:36,653 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
-2014-11-22 22:09:36,653 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
-2014-11-22 22:09:36,654 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
-2014-11-22 22:09:36,655 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 16 (took 1ms)
-2014-11-22 22:09:36,673 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
-2014-11-22 22:09:36,674 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 5 (took 0ms)
-2014-11-22 22:09:36,674 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
-2014-11-22 22:09:36,675 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 30 (took 1ms)
-2014-11-22 22:09:36,783 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
-2014-11-22 22:09:36,784 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
-2014-11-22 22:09:36,784 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
-2014-11-22 22:09:36,784 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
-2014-11-22 22:09:37,284 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Trees.TreeController
-2014-11-22 22:09:37,285 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
-2014-11-22 22:09:37,295 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.ITree
-2014-11-22 22:09:37,295 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 19 (took 0ms)
-2014-11-22 22:09:37,329 [6] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Initializing Examine and binding to business logic events
-2014-11-22 22:09:37,637 [6] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Adding examine event handlers for index providers: 3
-2014-11-22 22:09:37,640 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplication
-2014-11-22 22:09:37,641 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 0ms)
-2014-11-22 22:09:39,205 [6] INFO  Umbraco.Core.PluginManager - [Thread 10] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
-2014-11-22 22:09:39,205 [6] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 22 (took 0ms)
-2014-11-22 22:09:39,399 [6] INFO  Umbraco.Core.PluginManager - [Thread 10] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
-2014-11-22 22:09:39,400 [6] INFO  Umbraco.Core.PluginManager - [Thread 10] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 43 (took 0ms)
-2014-11-22 22:09:39,820 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 10] An unhandled exception occurred
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at Umbraco.Web.PublishedContentExtensions.<EnumerateDescendants>d__4f.MoveNext()
-   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
-   at ASP._Page_Views_Partials_SmartListTags_cshtml.Execute() in c:\Users\Theo\Documents\My Web Sites\Umbraco CMS1\Views\Partials\SmartListTags.cshtml:line 15
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
-   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
-   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
-   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)
-   at ASP._Page_Views_KSmartBlogContent_cshtml.Execute() in c:\Users\Theo\Documents\My Web Sites\Umbraco CMS1\Views\KSmartBlogContent.cshtml:line 13
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
-   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.WebPages.WebPageBase.<>c__DisplayClass7.<RenderPageCore>b__6(TextWriter writer)
-   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
-   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
-   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
-   at System.Web.WebPages.WebPageBase.PopContext()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.WebPages.WebPageBase.<>c__DisplayClass7.<RenderPageCore>b__6(TextWriter writer)
-   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
-   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
-   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
-   at System.Web.WebPages.WebPageBase.PopContext()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
-   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
-   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
-   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
-   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
-   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
-   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-2014-11-22 22:10:33,700 [6] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 12] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
-SQL Statement:
-SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-
-Exception:
-System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
-   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
-   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-2014-11-22 22:10:33,702 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 12] An unhandled exception occurred
-System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> umbraco.DataLayer.SqlHelperException: Umbraco Exception (DataLayer): SQL helper exception in ExecuteReader ---> SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
-SQL Statement:
-SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-
-Exception:
-System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
-   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
-   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-   --- End of inner exception stack trace ---
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-   at SmartBlogLibraries.smartBlogManagement.GetAllDocuments(SearchTerm searchTerm)
-   at SmartBlogLibraries.smartBlogManagement.showResults(EventArgs e)
-   at SmartBlogLibraries.smartBlogManagement.OnLoad(EventArgs e)
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.HandleError(Exception e)
-   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.ProcessRequest()
-   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
-   at System.Web.UI.Page.ProcessRequest(HttpContext context)
-   at ASP.umbraco_dashboard_usercontrolproxy_aspx.ProcessRequest(HttpContext context)
-   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-2014-11-22 22:10:36,541 [6] INFO  umbraco.content - [Thread 11] Loading content from disk cache...
-2014-11-22 22:17:48,433 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 21] Content 'KSmartBlog' with Id '1244' has been unpublished.
-2014-11-22 22:17:48,545 [6] INFO  Umbraco.Core.PluginManager - [Thread 21] Starting resolution types of umbraco.interfaces.ICacheRefresher
-2014-11-22 22:17:48,546 [6] INFO  Umbraco.Core.PluginManager - [Thread 21] Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 20 (took 1ms)
-2014-11-22 22:17:48,733 [6] WARN  Umbraco.Web.Routing.DefaultUrlProvider - [Thread 21] Couldn't find any page with nodeId=1244. This is most likely caused by the page not being published.
-2014-11-22 22:17:57,497 [6] WARN  Umbraco.Web.Routing.DefaultUrlProvider - [Thread 20] Couldn't find any page with nodeId=1209. This is most likely caused by the page not being published.
-2014-11-22 22:17:59,385 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 22] Content 'SmartBlog' with Id '1209' has been published.
-2014-11-22 22:17:59,558 [6] INFO  Umbraco.Core.PluginManager - [Thread 22] Starting resolution types of umbraco.interfaces.IDataType
-2014-11-22 22:17:59,559 [6] INFO  Umbraco.Core.PluginManager - [Thread 22] Completed resolution of types of umbraco.interfaces.IDataType, found 35 (took 0ms)
-2014-11-22 22:17:59,566 [6] INFO  Umbraco.Core.PluginManager - [Thread 22] Starting resolution types of umbraco.interfaces.ITree
-2014-11-22 22:17:59,567 [6] INFO  Umbraco.Core.PluginManager - [Thread 22] Completed resolution of types of umbraco.interfaces.ITree, found 35 (took 1ms)
-2014-11-22 22:18:30,086 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 18] Content 'SmartBlog' with Id '1209' has been published.
-2014-11-22 22:18:48,908 [6] WARN  Umbraco.Web.Routing.DefaultUrlProvider - [Thread 23] Couldn't find any page with nodeId=1244. This is most likely caused by the page not being published.
-2014-11-22 22:18:53,841 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 23] Content 'KSmartBlog' with Id '1244' has been unpublished.
-2014-11-22 22:18:54,086 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 23] Content 'KRSS' with Id '1250' has been unpublished.
-2014-11-22 22:18:54,115 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 23] Content 'KPosts' with Id '1249' has been unpublished.
-2014-11-22 22:18:54,165 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 23] Content '2014' with Id '1251' has been unpublished.
-2014-11-22 22:18:54,213 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 23] Content 'November' with Id '1252' has been unpublished.
-2014-11-22 22:18:54,253 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 23] Content 'Kiarah's Blog was born' with Id '1253' has been unpublished.
-2014-11-22 22:18:54,304 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 23] Content 'Test comment.' with Id '1254' has been unpublished.
-2014-11-22 22:19:04,678 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 24] Content 'KSmartBlog' with Id '1244' is trashed and could not be published.
-2014-11-22 22:19:22,178 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 23] Content 'SmartBlog' with Id '1209' has been published.
-2014-11-22 22:21:15,527 [6] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 24] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
-SQL Statement:
-SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-
-Exception:
-System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
-   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
-   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-2014-11-22 22:21:15,528 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 24] An unhandled exception occurred
-System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> umbraco.DataLayer.SqlHelperException: Umbraco Exception (DataLayer): SQL helper exception in ExecuteReader ---> SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
-SQL Statement:
-SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-
-Exception:
-System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
-   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
-   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-   --- End of inner exception stack trace ---
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-   at SmartBlogLibraries.smartBlogManagement.GetAllDocuments(SearchTerm searchTerm)
-   at SmartBlogLibraries.smartBlogManagement.showResults(EventArgs e)
-   at SmartBlogLibraries.smartBlogManagement.OnLoad(EventArgs e)
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Control.LoadRecursive()
-   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.HandleError(Exception e)
-   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
-   at System.Web.UI.Page.ProcessRequest()
-   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
-   at System.Web.UI.Page.ProcessRequest(HttpContext context)
-   at ASP.umbraco_dashboard_usercontrolproxy_aspx.ProcessRequest(HttpContext context)
-   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-2014-11-22 22:29:41,645 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
-2014-11-22 22:29:41,655 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 7ms)
-2014-11-22 22:29:41,662 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
-2014-11-22 22:29:41,756 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 35 (took 93ms)
-2014-11-22 22:29:41,851 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
-2014-11-22 22:29:41,852 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
-2014-11-22 22:29:41,852 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
-2014-11-22 22:29:41,854 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 16 (took 1ms)
-2014-11-22 22:29:41,874 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
-2014-11-22 22:29:41,875 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 5 (took 0ms)
-2014-11-22 22:29:41,875 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
-2014-11-22 22:29:41,877 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 30 (took 1ms)
-2014-11-22 22:29:41,953 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
-2014-11-22 22:29:41,953 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
-2014-11-22 22:29:41,953 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
-2014-11-22 22:29:41,954 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
-2014-11-22 22:29:42,403 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Trees.TreeController
-2014-11-22 22:29:42,404 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
-2014-11-22 22:29:42,415 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.ITree
-2014-11-22 22:29:42,415 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 19 (took 0ms)
-2014-11-22 22:29:42,443 [6] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Initializing Examine and binding to business logic events
-2014-11-22 22:29:42,705 [6] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Adding examine event handlers for index providers: 3
-2014-11-22 22:29:42,709 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplication
-2014-11-22 22:29:42,710 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 0ms)
-2014-11-22 22:29:43,450 [6] INFO  umbraco.content - [Thread 9] Loading content from disk cache...
-2014-11-22 22:29:43,520 [6] INFO  Umbraco.Core.PluginManager - [Thread 9] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
-2014-11-22 22:29:43,520 [6] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 22 (took 0ms)
-2014-11-22 22:29:43,756 [6] INFO  Umbraco.Core.PluginManager - [Thread 9] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
-2014-11-22 22:29:43,757 [6] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 43 (took 0ms)
-2014-11-22 22:30:13,237 [6] ERROR umbraco.DataLayer.SqlHelper`1[[System.Data.SqlServerCe.SqlCeParameter, System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91]] - [Thread 9] Error executing query SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
-SQL Statement:
-SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published
-
-Exception:
-System.Data.SqlServerCe.SqlCeException (0x80004005): The number of arguments specified for the function is not correct. [ Minimum argument count = 1, Maximum argument count = 1,Name of function(if known) = isNull ]
-   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
-   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
-   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCeApplicationBlock.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlCeParameter[] commandParameters)
-   at SqlCE4Umbraco.SqlCEHelper.ExecuteReader(String commandText, SqlCeParameter[] parameters)
-   at umbraco.DataLayer.SqlHelper`1.ExecuteReader(String commandText, IParameter[] parameters)
-2014-11-22 22:30:13,240 [6] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 9] An unhandled exception occurred
+2014-11-23 20:43:17,886 [14] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 47] An unhandled exception occurred
 System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> umbraco.DataLayer.SqlHelperException: Umbraco Exception (DataLayer): SQL helper exception in ExecuteReader ---> SqlCE4Umbraco.SqlCeProviderException: Error running Reader: 
 SQL Statement:
 SELECT  umbracoNode.Id,umbracoNode.Text, isNull(CMSDocument.Published,0) as Published, DocType.Text as nodeTypeName  from umbracoNode Left Join cmsDocument ON umbracoNode.Id = cmsDocument.NodeId and Published = 1 INNER JOIN cmsContent ON umbracoNode.Id = cmsContent.NodeId INNER JOIN umbracoNode DocType ON cmsContent.contentType = DocType.Id and DocType.nodeObjectType = 'a2cb7800-f571-4787-9638-bc48539a0efb'  INNER JOIN cmsContentType ON cmsContent.contentType = cmsContentType.NodeId WHERE (umbracoNode.nodeObjectType = 'c66ba18e-eaf3-4cff-8a22-41b16d66a972')AND umbracoNode.ParentId <> -20And cmsContentType.alias = @Alias And isNull(CMSDocument.Published,0) = @Published

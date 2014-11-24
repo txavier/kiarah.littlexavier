@@ -13,27 +13,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>@Umbraco.Field("smartBlogTitle", altFieldAlias: "pageName") - Smart Blog</title>
+    <meta charset="UTF-8" />
+    <title>@Umbraco.Field("smartBlogTitle", altFieldAlias: "pageName")</title>
     <!-- Meta Data -->
     <!--meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /-->
-    <meta charset="UTF-8" />
     @*<meta name="keywords" content="@Umbraco.Field("smartBlogSeoKeywords", altText: CurrentPage.AncestorOrSelf(1).GetPropertyValue("smartBlogSeoKeywords"))" />
         <meta name="description" content="@Umbraco.Field("smartBlogSeoDescription", altText: CurrentPage.AncestorOrSelf(1).GetPropertyValue("smartBlogSeoDescription"))" />*@
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Xavier Software">
     <meta name="dcterms.audience" content="Global" />
-    <meta name="dcterms.rightsHolder" content="Smart Blog. Copyright (c) 2013" />
-    <meta name="Author" content="Luke Alderton" />
+    <meta name="dcterms.rightsHolder" content="Xavier Software. Copyright (c) 2014" />
     <meta name="pageId" id="pageId" content="@Model.Content.Id" />
     <!-- CSS -->
-    <link href="/css/Main.SmartBlog.css" rel="stylesheet" type="text/css" />
-    <!-- JS - All scripts aside from shiv scripts are deffered to the bottom of this document -->
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <!-- Favicon -->
-    <link type="image/x-icon" rel="icon" href="/favicon.ico" />
+    @*<link href="~/css/Main.SmartBlog.css" rel="stylesheet" type="text/css" />*@
+    <!--link rel="stylesheet/less" href="~/less/bootstrap.less" type="text/css" /-->
+    <!--link rel="stylesheet/less" href="~/less/responsive.less" type="text/css" /-->
+    <!--script src="~/js/less-1.3.3.min.js"></script-->
+    <!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+
+    <link href="~/css/style.css" rel="stylesheet">
+    <link href="~/Css/Main.SmartBlog.Modified.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    @RenderSection("Styles", false)
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="~/js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/images/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/images/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/images/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="~/images/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="~/images/favicon.png">
+
+    <script type="text/javascript" src="~/js/jquery.min.js"></script>
+    <script type="text/javascript" src="~/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/js/scripts.js"></script>
     <!-- Extras -->
     @RenderSection("head", false)
 </head>
 <body id="page">
-    <header>
+    @*<header>
         <div class="banner">
             <a href="/" title="SmartBlog">
                 <span style="color: #ff8d00;">Smart</span> Blog
@@ -49,7 +70,144 @@
         <div style="float: left; width: 600px; height: 30px;">
             <a href="/en/terms">Terms</a> | <a href="/en/privacy">Privacy</a> | &copy; Copyright - Website
         </div>
-    </footer>
+    </footer>*@
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h1 class="text-center text-primary">
+                    Kiarah Isabelle
+                </h1>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Brand</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="#">Link</a>
+                            </li>
+                            <li>
+                                <a href="#">Link</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Something else here</a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">Separated link</a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">One more separated link</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        @*<form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control">
+                            </div> <button type="submit" class="btn btn-default">Submit</button>
+                        </form>*@
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">Link</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Something else here</a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">Separated link</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="carousel slide" id="carousel-793957">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#carousel-793957">
+                        </li>
+                        <li data-slide-to="1" data-target="#carousel-793957">
+                        </li>
+                        <li data-slide-to="2" data-target="#carousel-793957">
+                        </li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img alt="" src="http://lorempixel.com/1600/500/sports/1">
+                            <div class="carousel-caption">
+                                <h4>
+                                    First Thumbnail label
+                                </h4>
+                                <p>
+                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img alt="" src="http://lorempixel.com/1600/500/sports/2">
+                            <div class="carousel-caption">
+                                <h4>
+                                    Second Thumbnail label
+                                </h4>
+                                <p>
+                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img alt="" src="http://lorempixel.com/1600/500/sports/3">
+                            <div class="carousel-caption">
+                                <h4>
+                                    Third Thumbnail label
+                                </h4>
+                                <p>
+                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div> <a class="left carousel-control" href="#carousel-793957" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-793957" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
     <!-- Deffered scripts -->
     <script type="text/javascript" src="/scripts/Main.SmartBlog.js" async></script>
 </body>
