@@ -1,0 +1,9 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@using umbraco.MacroEngines;
+
+@{
+    var weeksOld = Math.Floor(((DateTime.Today - new DateTime(2014, 9, 9)).TotalDays) / 7).ToString();
+}
+
+<h2>Kiarah's Wishlist</h2>
+<p>@Model.MacroParameters["wishlist"] tall.</p>

@@ -395,8 +395,8 @@ ul.breadcrumb {
 
 /* Custom Carousel Features */
 .carousel-inner > .item > img {
-    width: 640px;
-    height: 360px;
+    width: 1072px;
+    height: 712px;
     margin: 0 auto;
 }
 /* -------------------------------------------------------------- */
@@ -415,7 +415,8 @@ body, h1, h2, h3, .smartSubTitle {
 
 body {
     background-color: #dcdfe0;
-    background-image: url("/images/dsc_0642.jpg");
+    /*background-image: url("/images/dsc_0642.jpg");*/
+    background-image: url("/images/background.png");
 }
 
 .navbar {

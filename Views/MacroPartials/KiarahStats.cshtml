@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@using umbraco.MacroEngines;
+
+@{
+    var weeksOld = Math.Floor(((DateTime.Today - new DateTime(2014, 9, 9)).TotalDays) / 7).ToString();
+}
+
+<h2>Kiarah's Stats</h2>
+<p>Today Kiarah is @weeksOld weeks old.</p>
+<hr/>
+<p>On the last doctor's visit Kiarah was @(Model.MacroParameters["weight"]).</p>
+<p>She was also measured to be @Model.MacroParameters["height"] tall.</p>
